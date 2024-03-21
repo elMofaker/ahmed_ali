@@ -1,4 +1,3 @@
-
 $color-blue: #c1dcdc;
 
 * {
@@ -9,9 +8,50 @@ li {
     list-style: none;
 }
 
+body {
+    height: 10000vh;
+}
+
+.css-button-arrow--sky {
+    min-width: 130px;
+    height: 40px;
+    color: #fff;
+    padding: 5px 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    overflow: hidden;
+    border-radius: 5px;
+    border: none;
+    background-color: $color-blue;
+
+    &:hover {
+        border-radius: 5px;
+        padding-right: 24px;
+        padding-left: 8px;
+    }
+
+    &:hover::after {
+        opacity: 1;
+        right: 10px;
+    }
+
+    &::after {
+        content: "\00BB";
+        position: absolute;
+        opacity: 0;
+        font-size: 20px;
+        line-height: 40px;
+        top: 0;
+        right: -20px;
+        transition: 0.4s;
+    }
+}
 
 // start nav
-
 
 .navbar {
     & toggler {
@@ -52,6 +92,7 @@ li {
         }
 
         ;
+
         width: 75%;
         height: 50px;
         border-radius: 10px;
@@ -113,9 +154,42 @@ li {
 
 // end home
 
+// start menu
+.menu {
+    & h2 {
+        font-size: 35px;
+    }
 
+    & p {
+        font-size: 20px;
+    }
 
+    & button {
+        color: black;
+    }
 
+    & .card {
+        transition: 1s;
+        border: none;
+        &:hover{
+            padding-top: 20px;
+            transition: 1s; 
+        }
+        & p {
+            color: #00000054;
+        }
+
+        & h4 {
+            padding: 0 {
+                top: 10px;
+            }
+
+            ;
+        }
+    }
+}
+
+// end menu
 
 // start media
 
@@ -132,19 +206,34 @@ li {
         padding: 0px;
         margin-top: 10px;
         width: 51px;
-    }    
+    }
+
     .bor::after {
         display: none;
     }
-    .bor::before{
+
+    .bor::before {
         display: none;
     }
 }
+
 @media (max-width: 767px) {
-    .castam{
+    .castam {
         display: flex;
         justify-content: center;
         align-items: end;
+    }
+
+    .home {
+        text-align: center;
+
+        & input {
+            width: 100%;
+        }
+
+        & .befor::before {
+            left: 100%;
+        }
     }
 }
 
@@ -168,20 +257,23 @@ li {
 }
 
 // m
-@media (min-width: 766px) and (max-width: 991px){
-        .bor::after {
-            left: -74%;
-            top: 26%;
-        }
-        .bor::before {
-                top: -38%;
-                left: 61%;
-                transform: rotate(309deg);
-            }
-        .bor img{
-            height: 117%;
-        }
+@media (min-width: 766px) and (max-width: 991px) {
+    .bor::after {
+        left: -74%;
+        top: 26%;
+    }
+
+    .bor::before {
+        top: -38%;
+        left: 61%;
+        transform: rotate(309deg);
+    }
+
+    .bor img {
+        height: 117%;
+    }
 }
+
 // end media
 
 

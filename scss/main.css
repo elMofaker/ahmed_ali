@@ -1,9 +1,50 @@
+@charset "UTF-8";
 * {
   scroll-behavior: smooth;
 }
 
 li {
   list-style: none;
+}
+
+body {
+  height: 10000vh;
+}
+
+.css-button-arrow--sky {
+  min-width: 130px;
+  height: 40px;
+  color: #fff;
+  padding: 5px 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  outline: none;
+  overflow: hidden;
+  border-radius: 5px;
+  border: none;
+  background-color: #c1dcdc;
+}
+.css-button-arrow--sky:hover {
+  border-radius: 5px;
+  padding-right: 24px;
+  padding-left: 8px;
+}
+.css-button-arrow--sky:hover::after {
+  opacity: 1;
+  right: 10px;
+}
+.css-button-arrow--sky::after {
+  content: "»";
+  position: absolute;
+  opacity: 0;
+  font-size: 20px;
+  line-height: 40px;
+  top: 0;
+  right: -20px;
+  transition: 0.4s;
 }
 
 .navbar toggler {
@@ -85,6 +126,31 @@ li {
   align-items: center;
 }
 
+.menu h2 {
+  font-size: 35px;
+}
+.menu p {
+  font-size: 20px;
+}
+.menu button {
+  color: black;
+}
+.menu .card {
+  transition: 1s;
+  border: none;
+}
+.menu .card:hover {
+  padding-top: 20px;
+  transition: 1s;
+}
+.menu .card p {
+  color: rgba(0, 0, 0, 0.3294117647);
+}
+.menu .card h4 {
+  padding: 0;
+  padding-top: 10px;
+}
+
 @media (max-width: 991px) {
   .icon-hed {
     display: none;
@@ -110,6 +176,15 @@ li {
     display: flex;
     justify-content: center;
     align-items: end;
+  }
+  .home {
+    text-align: center;
+  }
+  .home input {
+    width: 100%;
+  }
+  .home .befor::before {
+    left: 100%;
   }
 }
 @media (max-width: 1400px) and (min-width: 1200px) {
