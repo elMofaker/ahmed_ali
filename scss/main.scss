@@ -54,16 +54,16 @@ body {
 // start nav
 
 .navbar {
-    & toggler {
+    & button {
         border: none;
 
         &:focus {
             box-shadow: none;
         }
 
-        & li {
-            padding-left: 10px;
-        }
+    }
+    & li {
+        padding-left: 10px;
     }
 
     & .con-icon {
@@ -171,9 +171,12 @@ body {
     & .card {
         transition: 1s;
         border: none;
+        padding: 10px;
+        margin: 1rem;
         &:hover{
-            padding-top: 20px;
+            margin-top: 40px;
             transition: 1s; 
+            box-shadow: black 0 0 19px -15px;
         }
         & p {
             color: #00000054;
@@ -239,7 +242,9 @@ body {
         text-align: center;
     }
 }
+@media (max-width: 767px){
 
+}
 
 // xl
 @media (max-width: 1400px) and (min-width: 1200px) {
