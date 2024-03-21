@@ -1,0 +1,20 @@
+.con-icon {
+    justify-content: space-between;
+    list-style: none;
+    display: inline;
+    display: flex;
+    padding: 0px;
+    margin-top: 10px;
+    width: 100px;
+}
+
+.navbar .navbar-toggler {
+    border: none;
+    &:focus{
+            box-shadow: none;
+    }
+}
+
+.navbar li {
+    padding-left: 10px;
+}

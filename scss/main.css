@@ -1,0 +1,128 @@
+@media (max-width: 991px) {
+  .icon-hed {
+    display: none;
+  }
+  .con-icon {
+    justify-content: space-between;
+    list-style: none;
+    display: inline;
+    display: flex;
+    padding: 0px;
+    margin-top: 10px;
+    width: 51px;
+  }
+}
+/* Medium */
+/* animation scale-up-br */
+.move-up-left {
+  animation: scale-up-br 1.3s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+@keyframes scale-up-br {
+  0% {
+    transform: scale(0.5);
+    transform-origin: 100% 100%;
+  }
+  100% {
+    transform: scale(1);
+    transform-origin: 100% 100%;
+  }
+}
+/* top */
+.move-top {
+  animation: slide-top 1.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+@keyframes slide-top {
+  0% {
+    transform: translateY(-100px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+/* left */
+.navbar li,
+.move-left {
+  animation: scale-up-hor-left 1.3s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+@keyframes scale-up-hor-left {
+  0% {
+    transform: scaleX(0.4);
+    transform-origin: 0% 0%;
+  }
+  100% {
+    transform: scaleX(1);
+    transform-origin: 0% 0%;
+  }
+}
+.con-icon {
+  justify-content: space-between;
+  list-style: none;
+  display: inline;
+  display: flex;
+  padding: 0px;
+  margin-top: 10px;
+  width: 100px;
+}
+
+.navbar .navbar-toggler {
+  border: none;
+}
+.navbar .navbar-toggler:focus {
+  box-shadow: none;
+}
+
+.navbar li {
+  padding-left: 10px;
+}
+
+.home {
+  background-color: #C1DCDC;
+  border-radius: 15px;
+}
+.home input {
+  border: none;
+  padding: 5px 5px 5px 10px;
+  width: 75%;
+  height: 50px;
+  border-radius: 10px;
+}
+.home input div {
+  background-color: #C1DCDC;
+  width: 30px;
+  height: 30px;
+  margin-left: -40px;
+  padding: auto;
+  border-radius: 5px;
+}
+.home .bor {
+  width: 83%;
+  height: 76%;
+  border-top-left-radius: 59%;
+  border-bottom-left-radius: 53%;
+  border-top-right-radius: 47%;
+  background-color: black;
+  display: flex;
+  align-items: flex-end;
+  position: relative;
+  justify-content: end;
+}
+.home .bor::after {
+  content: url(../img/Vector\ 186.png);
+  position: absolute;
+  left: -53%;
+  top: 42%;
+}
+.home .bor::before {
+  content: url(../img/Vector\ 187.png);
+  position: absolute;
+  top: -34%;
+  left: 81%;
+}
+
+* {
+  scroll-behavior: smooth;
+}
+
+li {
+  list-style: none;
+}

@@ -1,0 +1,64 @@
+
+$color-blue: #c1dcdc;
+.home {
+    background-color: $color-blue;
+    border-radius: 15px;
+
+    input> {
+        border: none;
+        padding: 5px 5px 5px 10px;
+        width: 75%;
+        height: 50px;
+        border-radius: 10px;
+    }
+
+    .icon-inp {
+        background-color: $color-blue;
+        width: 30px;
+        height: 30px;
+        margin-left: -40px;
+        padding: auto;
+        border-radius: 5px;
+    }
+
+    .bor {
+        width: 83%;
+        height: 76%;
+        border-top-left-radius: 59%;
+        border-bottom-left-radius: 53%;
+        border-top-right-radius: 47%;
+        background-color: black;
+        display: flex;
+        align-items: flex-end;
+        position: relative;
+        justify-content: end;
+
+        &::after {
+            content: url(../img/Vector\ 186.png);
+            position: absolute;
+            left: -53%;
+            top: 42%;
+        }
+
+        &::before {
+            content: url(../img/Vector\ 187.png);
+            position: absolute;
+            top: -34%;
+            left: 81%;
+        }
+    }
+
+    .befor {
+        position: relative;
+
+        &::before {
+            content: "";
+            width: 2px;
+            height: 100%;
+            background-color: black;
+            position: absolute;
+            left: 75%;
+            @extend .mov-top;
+        }
+    }
+}

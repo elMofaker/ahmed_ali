@@ -1,6 +1,6 @@
 /* animation scale-up-br */
 
-.animation-mave-left {
+.move-up-left {
     -webkit-animation: scale-up-br 1.3s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
     animation: scale-up-br 1.3s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 }
@@ -38,7 +38,7 @@
 }
 
 /* top */
-.animation-mave-top {
+.move-top {
     -webkit-animation: slide-top 1.3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
     animation: slide-top 1.3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
@@ -74,7 +74,7 @@
 /* left */
 
 .navbar li,
-.animation-mave {
+.move-left {
     -webkit-animation: scale-up-hor-left 1.3s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
     animation: scale-up-hor-left 1.3s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 }

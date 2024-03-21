@@ -1,0 +1,21 @@
+@use "../scss/content/media" as *;
+@use "../scss/content/var" as *;
+@use "../scss/content/animation" as *;
+@use "../scss/pages/header";
+@use '../scss/pages/body';
+
+
+
+
+* {
+    scroll-behavior: smooth;
+}
+
+li {
+    list-style: none;
+}
+center-f{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
