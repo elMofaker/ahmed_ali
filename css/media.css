@@ -1,0 +1,20 @@
+
+
+@media (max-width: 991px) {
+    .icon-hed {
+        display: none;
+    }
+
+    .con-icon {
+        justify-content: space-between;
+        list-style: none;
+        display: inline;
+        display: flex;
+        padding: 0px;
+        margin-top: 10px;
+        width: 51px;
+    }
+}
+
+/* Medium */
+@media (max-width: 993px) and (min-width: 767px) {}
