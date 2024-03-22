@@ -300,8 +300,9 @@
   .home .bor img {
     height: 117%;
   }
-  .home .castam img {
-    height: 86%;
+  .home .bor {
+    width: 100%;
+    height: 57%;
   }
 }
 * {
