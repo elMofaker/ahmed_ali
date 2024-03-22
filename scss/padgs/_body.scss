@@ -1,0 +1,161 @@
+// start home
+@use '../contant/var' as *;
+
+.home {
+    background-color: $color-blue;
+    border-radius: 15px;
+
+    input {
+        border: none;
+
+        padding: 5px {
+            left: 10px;
+        };
+
+        width: 75%;
+        height: 50px;
+        border-radius: 10px;
+    }
+
+    .bor {
+        width: 83%;
+        height: 76%;
+        border-top-left-radius: 59%;
+        border-bottom-left-radius: 53%;
+        border-top-right-radius: 47%;
+        background-color: black;
+        display: flex;
+        align-items: flex-end;
+        position: relative;
+        justify-content: end;
+
+        &::after {
+            content: url(../img/Vector\ 186.png);
+            position: absolute;
+            left: -53%;
+            top: 42%;
+        }
+
+        &::before {
+            content: url(../img/Vector\ 187.png);
+            position: absolute;
+            top: -39%;
+            left: 77%;
+            transform: rotate(309deg);
+        }
+
+    }
+    h1{
+        font-size: 4.5rem;
+        font-family: system-ui;
+    }
+    .befor {
+        position: relative;
+
+        &::before {
+            content: "";
+            width: 2px;
+            height: 100%;
+            background-color: $color-black;
+            position: absolute;
+            left: 75%;
+        }
+    }
+
+    .icon-inp {
+        background-color: $color-blue;
+        width: 30px;
+        height: 30px;
+        margin-left: -40px;
+        padding: auto;
+        border-radius: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+// end home
+
+// start menu
+.menu {
+    & h2 {
+        font-size: 35px;
+    }
+
+    & p {
+        font-size: 20px;
+    }
+
+    & button {
+        color: $color-black;
+    }
+
+    & .card {
+        transition: 1s;
+        border: none;
+        padding: 10px;
+        margin: 1rem;
+
+        &:hover {
+            padding-top: 20px;
+            transition: 1s;
+            margin-top: -20px;
+        }
+
+        & p {
+            color: $color-blak-rgba;
+        }
+
+        & h4 {
+            padding: 0 {
+                top: 10px;
+            }
+
+            ;
+        }
+    }
+}
+// end menu
+
+
+// start about
+.about {
+    .card {
+        border: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        // container img
+        div {
+            width: 75px;
+            height: 75px;
+            background-color: $color-blue;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}
+// end about
+
+
+// start categor
+.categor {
+    .con-bor {
+        background-color: $color-blue;
+    }
+
+    button {
+        background-color: $color-white;
+        color: $color-black;
+    }
+
+    // move img top -85
+    .con-pa {
+        margin-top: -85px;
+    }
+}
+// end categor
+

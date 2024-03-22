@@ -1,0 +1,26 @@
+@use '../contant/animation'as *;
+.navbar {
+    & button {
+        border: none;
+
+        &:focus {
+            box-shadow: none;
+        }
+
+    }
+
+    & li {
+        padding-left: 10px;
+    }
+
+    & .con-icon {
+        justify-content: space-between;
+        list-style: none;
+        display: inline;
+        display: flex;
+        padding: 0px;
+        margin-top: 10px;
+        width: 100px;
+    }
+}
+
