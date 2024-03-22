@@ -125,7 +125,6 @@ body {
   justify-content: center;
   align-items: center;
 }
-
 .menu h2 {
   font-size: 35px;
 }
@@ -181,32 +180,7 @@ body {
   margin-top: -85px;
 }
 
-@media (max-width: 991px) {
-  .icon-hed {
-    display: none;
-  }
-  .con-icon {
-    justify-content: space-between;
-    list-style: none;
-    display: inline;
-    display: flex;
-    padding: 0px;
-    margin-top: 10px;
-    width: 51px;
-  }
-  .bor::after {
-    display: none;
-  }
-  .bor::before {
-    display: none;
-  }
-}
 @media (max-width: 767px) {
-  .castam {
-    display: flex;
-    justify-content: center;
-    align-items: end;
-  }
   .home {
     text-align: center;
   }
@@ -216,36 +190,75 @@ body {
   .home .befor::before {
     left: 100%;
   }
+  .home .castam {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+  }
   .menu .card {
     text-align: center;
   }
+  .categor img {
+    width: 50%;
+  }
+  .categor .con-pa {
+    margin-top: 0px;
+  }
+  .categor .con-pa-2 {
+    margin-top: 0px;
+  }
+}
+@media (max-width: 991px) {
+  nav .icon-hed {
+    display: none;
+  }
+  nav .con-icon {
+    justify-content: space-between;
+    list-style: none;
+    display: inline;
+    display: flex;
+    padding: 0px;
+    margin-top: 10px;
+    width: 51px;
+  }
+  .home .bor::after {
+    display: none;
+  }
+  .home .bor::before {
+    display: none;
+  }
 }
 @media (max-width: 1400px) and (min-width: 1200px) {
-  .bor::before {
+  .home .bor::before {
     top: -46%;
     left: 74%;
     transform: rotate(304deg);
   }
+  .categor img {
+    width: 80%;
+  }
 }
-/* l */
 @media (max-width: 1200px) and (min-width: 766px) {
-  .bor::before {
+  .home .bor::before {
     top: -46%;
     left: 65%;
     transform: rotate(304deg);
   }
+  .categor img {
+    width: 78%;
+  }
 }
-@media (min-width: 766px) and (max-width: 991px) {
-  .bor::after {
+@media (max-width: 991px) and (min-width: 766px) {
+  .home .bor::after {
     left: -74%;
     top: 26%;
   }
-  .bor::before {
+  .home .bor::before {
     top: -38%;
     left: 61%;
     transform: rotate(309deg);
   }
-  .bor img {
+  .home .bor img {
     height: 117%;
   }
 }

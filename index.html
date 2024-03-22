@@ -7,12 +7,12 @@
     <!-- link css font awsam-->
     <link rel="stylesheet" href="css/all.min.css">
     <!-- link css font google -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+
     <!-- link css bootstrap -->
     <link rel="stylesheet" href="css/bootstrap.min.css.map">
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- css style -->
+    <link rel="stylesheet" href="css/style.css">
     <!-- link styly scss -->
     <link rel="stylesheet" href="scss/main.css">
     <!-- title -->
@@ -62,7 +62,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6 col-md-8 col-12">
-                        <h1 class="move-left fa-4x pt-3 pb-3">Buy your dream plants</h1>
+                        <h1 class="move-left pt-3 pb-3">Buy your dream plants</h1>
                         <div class="container pt-3 pb-3">
                             <div class="row">
                                 <div class="col befor">
@@ -96,7 +96,7 @@
     <div class="menu pt-5 pb-5">
         <div class="container">
             <div class="row">
-                <div class="p-4 col-12 col-lg-3">
+                <div class="p-4 col-12 col-lg-3 text-center text-lg-start">
                     <h2 class="move-left">Best Selling Plants</h2>
                     <p class="move-left">Easiest way to healthy life by buying your favorite plants </p>
                     <button class="move-left css-button-arrow--sky">See more</button>
@@ -176,29 +176,74 @@
     <!-- end about -->
     <!-- start categor -->
     <div class="text-center pt-5 pb-5 categor">
-            <h1 class="pt-3">Categories</h1>
-            <p class="pt-3 pb-5">Find what you are looking for</p>
-            <div class=" pt-5 pb-5 con-bor">
-                <div class="row">
-                    <div class="col-lg-4 col-md-6 col-sm-12 con-pa">
-                        <img src="img/Frame 36.png">
-                        <h5 class="pt-3 pb-3">Natural Plants</h5>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12">
-                        <img src="img/Frame 37.png">
-                        <h5 class="pt-3 pb-3">Plant Accessories</h5>
-                        <P class="pt-3 pb-3 p-5">Horem ipsum dolor sit amet,<br> consectetur adipiscing elit.</P>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12 con-pa">
-                        <img src="img/Frame 38.png">
-                        <h5 class="pt-3 pb-3">Artificial Plants</h5>
-                    </div>
+        <h1 class="pt-3">Categories</h1>
+        <p class="pt-3 pb-5">Find what you are looking for</p>
+        <div class=" pt-5 pb-5 con-bor">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-12 con-pa">
+                    <img src="img/Frame 36.png">
+                    <h5 class="pt-3 pb-3">Natural Plants</h5>
                 </div>
-                <button class="move-left css-button-arrow--sky">Explore</button>
+                <div class="col-lg-4 col-md-6 col-sm-12 p-3 con-pa-2">
+                    <img src="img/Frame 37.png" />
+                    <h5 class="pt-3 pb-3">Plant Accessories</h5>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 con-pa">
+                    <img class="" src="img/Frame 38.png">
+                    <h5 class="pt-3 pb-3">Artificial Plants</h5>
+                </div>
             </div>
+            <P class="pt-3 pb-3 p-5">Horem ipsum dolor sit amet,<br> consectetur adipiscing elit.</P>
+            <button class="move-left css-button-arrow--sky">Explore</button>
+        </div>
     </div>
     <!-- end categor -->
 
+    <!-- start slid -->
+    <div id="carouselExampleCaptions" class="carousel slide">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>First slide label</h5>
+                    <p>Some representative placeholder content for the first slide.</p>
+                </div>
+                <!-- <img src="..." class="d-block w-100" alt="..."> -->
+            </div>
+            <div class="carousel-item">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Second slide label</h5>
+                    <p>Some representative placeholder content for the second slide.</p>
+                </div>
+                <!-- <img src="..." class="d-block w-100" alt="..."> -->
+            </div>
+            <div class="carousel-item">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Third slide label</h5>
+                    <p>Some representative placeholder content for the third slide.</p>
+                </div>
+                <img src="/img/unsplash_5aGUyCW_PJw-removebg-preview.png" class="d-block w-100" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <!-- end slid -->
     <!-- link js home -->
     <script src="js/home.js"></script>
     <!-- link js font -->
