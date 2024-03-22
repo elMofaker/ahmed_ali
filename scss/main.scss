@@ -62,6 +62,7 @@ body {
         }
 
     }
+
     & li {
         padding-left: 10px;
     }
@@ -173,11 +174,13 @@ body {
         border: none;
         padding: 10px;
         margin: 1rem;
-        &:hover{
-            margin-top: 40px;
-            transition: 1s; 
-            box-shadow: black 0 0 19px -15px;
+
+        &:hover {
+            padding-top: 20px;
+            transition: 1s;
+            margin-top: -20px;
         }
+
         & p {
             color: #00000054;
         }
@@ -193,6 +196,28 @@ body {
 }
 
 // end menu
+// start about
+.about {
+    .card {
+        border: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        div {
+            width: 75px;
+            height: 75px;
+            background-color: $color-blue;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}
+
+// end about
+
 
 // start media
 
@@ -238,13 +263,13 @@ body {
             left: 100%;
         }
     }
-    .menu .card{
+
+    .menu .card {
         text-align: center;
     }
 }
-@media (max-width: 767px){
 
-}
+@media (max-width: 767px) {}
 
 // xl
 @media (max-width: 1400px) and (min-width: 1200px) {

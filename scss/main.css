@@ -142,9 +142,9 @@ body {
   margin: 1rem;
 }
 .menu .card:hover {
-  margin-top: 40px;
+  padding-top: 20px;
   transition: 1s;
-  box-shadow: black 0 0 19px -15px;
+  margin-top: -20px;
 }
 .menu .card p {
   color: rgba(0, 0, 0, 0.3294117647);
@@ -152,6 +152,22 @@ body {
 .menu .card h4 {
   padding: 0;
   padding-top: 10px;
+}
+
+.about .card {
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about .card div {
+  width: 75px;
+  height: 75px;
+  background-color: #c1dcdc;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 @media (max-width: 991px) {
