@@ -170,6 +170,17 @@ body {
   align-items: center;
 }
 
+.categor .con-bor {
+  background-color: #c1dcdc;
+}
+.categor button {
+  background-color: white;
+  color: black;
+}
+.categor .con-pa {
+  margin-top: -85px;
+}
+
 @media (max-width: 991px) {
   .icon-hed {
     display: none;

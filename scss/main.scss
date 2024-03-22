@@ -217,7 +217,20 @@ body {
 }
 
 // end about
-
+// start categor
+.categor{
+    .con-bor{
+        background-color: $color-blue;
+    }
+    button{
+        background-color: white;
+        color: black;
+    }
+    .con-pa{
+        margin-top: -85px;
+    }
+}
+// end categor
 
 // start media
 
