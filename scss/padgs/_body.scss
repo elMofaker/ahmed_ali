@@ -2,10 +2,6 @@
 @use '../contant/var' as *;
 @use '../contant/animation' as *;
 
-body {
-    height: 1000vh;
-}
-
 .home {
     background-color: $color-blue;
     border-radius: 15px;
@@ -36,7 +32,7 @@ body {
 
     /*hover effect*/
     button:hover {
-        color: #fff;
+        color: #000000;
         background-color: $color-blue;
         box-shadow: rgba(68, 243, 255, 0.5) 0 10px 20px;
         transform: translateY(-3px);
@@ -52,13 +48,10 @@ body {
         border: none;
         background: none;
         outline: none;
-        color: white;
+        color: $color-black;
         font-size: 15px;
         padding: 24px 46px 24px 26px;
     }
-
-
-
 
     .bor {
         width: 83%;
@@ -204,6 +197,15 @@ body {
     .con-pa {
         margin-top: -85px;
     }
+
+    img {
+        transition: .5s;
+
+        &:hover {
+            margin-top: -13px;
+            transition: .5s;
+        }
+    }
 }
 
 // end categor
@@ -216,7 +218,7 @@ body {
     }
 
     img {
-        width: 150%;
+        width: 100rem;
     }
 
     span {
@@ -225,53 +227,3 @@ body {
 }
 
 // end comment
-// start footer
-footer {
-    background-color: $color-blue;
-    p{
-        color: $color-blak-rgba;
-    }
-    .con-li-1 {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-
-        .icon {
-            padding: 8px 12px;
-            border-radius: 50%;
-            margin: 0 5px;
-            color: $color-black;
-            transition: 1s;
-            border: 1px solid $color-black;
-
-            &:hover {
-                margin-top: -10px;
-                transition: .5s;
-            }
-        }
-    }
-
-    .con-li-2 {
-        li {
-            margin: 10px 0;
-
-            a{
-                color: $color-blak-rgba;
-                transition: .3;
-
-                &:hover {
-                    color: $color-black;
-                    transition: .3;
-                }
-
-                span {
-                    color: $color-black;
-                    font-size: 20px;
-                }
-            }
-        }
-    }
-
-}
-
-// end footer

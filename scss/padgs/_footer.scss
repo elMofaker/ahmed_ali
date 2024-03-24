@@ -1,0 +1,58 @@
+@use '../contant/var' as *;
+@use '../contant/animation' as *;
+
+// start footer
+footer {
+    background-color: $color-blue;
+
+    p {
+        color: $color-blak-rgba;
+    }
+
+    .con-li-1 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        li {
+            border: 1px solid $color-black;
+            padding: 8px 12px;
+            border-radius: 50%;
+            transition: 1s;
+            
+            &:hover {
+                margin-top: -10px;
+                transition: .5s;
+            }
+
+            a {
+                color: $color-black;
+            }
+        }
+    }
+
+    .con-li-2 {
+        li {
+            margin: 10px 0;
+            
+            a {
+                color: $color-blak-rgba;
+                transition: 1;
+                text-decoration: none;
+
+                &:hover {
+                    color: $color-black;
+                    transition: 1;
+                }
+
+                span {
+                    color: $color-black;
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+
+}
+
+// end footer

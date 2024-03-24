@@ -1,5 +1,6 @@
 @use '../padgs/body' as *;
 @use '../padgs/header' as *;
+@use '../padgs/footer' as *;
 
 
 @media (max-width: 767px) {
@@ -50,6 +51,21 @@
     }
 
     // end categor
+    // start comment
+    .comment{
+        .main-card{
+            p{
+                font-size: 12px;
+            }
+            img{
+                width: 4rem;
+            }
+            h6,span{
+                font-size: .7rem;
+            }
+        }
+    }
+    // end comment
 }
 
 // start 991
