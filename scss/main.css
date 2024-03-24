@@ -40,6 +40,10 @@
     transform-origin: 0% 0%;
   }
 }
+body {
+  height: 1000vh;
+}
+
 .home {
   background-color: #c1dcdc;
   border-radius: 15px;
@@ -191,6 +195,56 @@
 }
 .categor .con-pa {
   margin-top: -85px;
+}
+
+.comment .main-card {
+  border-radius: 8px;
+  background-color: #c1dcdc;
+}
+.comment img {
+  width: 150%;
+}
+.comment span {
+  color: rgba(0, 0, 0, 0.3294117647);
+}
+
+footer {
+  background-color: #c1dcdc;
+}
+footer p {
+  color: rgba(0, 0, 0, 0.3294117647);
+}
+footer .con-li-1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+footer .con-li-1 .icon {
+  padding: 8px 12px;
+  border-radius: 50%;
+  margin: 0 5px;
+  color: black;
+  transition: 1s;
+  border: 1px solid black;
+}
+footer .con-li-1 .icon:hover {
+  margin-top: -10px;
+  transition: 0.5s;
+}
+footer .con-li-2 li {
+  margin: 10px 0;
+}
+footer .con-li-2 li a {
+  color: rgba(0, 0, 0, 0.3294117647);
+  transition: 0.3;
+}
+footer .con-li-2 li a:hover {
+  color: black;
+  transition: 0.3;
+}
+footer .con-li-2 li a span {
+  color: black;
+  font-size: 20px;
 }
 
 .navbar button {
