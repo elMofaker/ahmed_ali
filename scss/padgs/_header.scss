@@ -1,5 +1,8 @@
 @use '../contant/animation'as *;
 .navbar {
+    .navbar-brand{
+        font-size: 1.8rem;
+    }
     & button {
         border: none;
 

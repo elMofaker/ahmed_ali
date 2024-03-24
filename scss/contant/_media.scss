@@ -30,8 +30,12 @@
     // end home
     // start menu
     .menu .card {
+        width: 14rem;
         text-align: center;
         margin: 0.3rem;
+        h4,p{
+            font-size: 1.2rem;
+        }
     }
 
     // end menu

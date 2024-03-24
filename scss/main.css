@@ -152,6 +152,7 @@
   border: none;
   padding: 10px;
   margin: 1rem;
+  width: 17rem;
 }
 .menu .card:hover {
   padding-top: 20px;
@@ -215,6 +216,9 @@
   color: rgba(0, 0, 0, 0.3294117647);
 }
 
+.navbar .navbar-brand {
+  font-size: 1.8rem;
+}
 .navbar button {
   border: none;
 }
@@ -294,8 +298,12 @@ footer .con-li-2 li a span {
     font-size: 3rem;
   }
   .menu .card {
+    width: 14rem;
     text-align: center;
     margin: 0.3rem;
+  }
+  .menu .card h4, .menu .card p {
+    font-size: 1.2rem;
   }
   .categor img {
     width: 50%;
