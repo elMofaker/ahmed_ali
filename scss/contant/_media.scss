@@ -49,19 +49,21 @@
             margin-top: 0px;
         }
     }
-
     // end categor
     // start comment
     .comment{
         .main-card{
-            p{
-                font-size: 12px;
+            .prag{
+                font-size: 1rem;
             }
             img{
                 width: 4rem;
             }
             h6,span{
-                font-size: .7rem;
+                font-size: .8rem;
+            }
+            h6{
+                margin: 0;
             }
         }
     }
