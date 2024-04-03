@@ -19,7 +19,7 @@
 }
 @keyframes slide-top {
   0% {
-    transform: translateY(-100px);
+    transform: translateY(-50px);
   }
   100% {
     transform: translateY(0);
@@ -32,7 +32,7 @@
 }
 @keyframes scale-up-hor-left {
   0% {
-    transform: scaleX(0.4);
+    transform: scaleX(0.1);
     transform-origin: 0% 0%;
   }
   100% {
@@ -155,9 +155,9 @@
   width: 17rem;
 }
 .menu .card:hover {
-  padding-top: 20px;
   transition: 1s;
-  margin-top: -20px;
+  margin-top: 30px;
+  box-shadow: 0px 0px 15px -13px black;
 }
 .menu .card p {
   color: rgba(0, 0, 0, 0.3294117647);
@@ -183,6 +183,9 @@
   align-items: center;
 }
 
+.categor {
+  overflow: hidden;
+}
 .categor .con-bor {
   background-color: #c1dcdc;
 }
@@ -226,7 +229,7 @@
   box-shadow: none;
 }
 .navbar li {
-  padding-left: 10px;
+  padding: 10px;
 }
 .navbar .con-icon {
   justify-content: space-between;
